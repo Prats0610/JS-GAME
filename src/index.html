@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+    <div class="main">
+        <div class="timer">
+            <h1 id="displayTimer">00:00</h1>
+        </div>
+        <div class="header">
+            <h1>Enter the displayed alphabet</h1>
+        </div>
+        
+        <div class="random">
+            <h1 id="randomCharacter"></h1>
+        </div>
+        <div class="success">
+            <h2 id="output"></h2>
+        </div>
+        <div class="button">
+            <button class="reset" onclick="resetGame()">RESET</button>
+            <button class="start" onclick="startTimer()">START</button>
+        </div>
+        <div class="result">
+            <table id="display">
+                <th>User Input</th>
+                <th>Actual Character</th>
+                <th>Result</th>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
